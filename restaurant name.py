@@ -5,12 +5,12 @@ from langchain.chains import SequentialChain
 from secret_key import openapi_key
 
 import os
-os.environ['OPENAI_API_KEY'] = openapi_key
+os.environ['OPENAI_API_KEY'] = "your openapi_key"
 
 llm = OpenAI(temperature=0.7)
 
 def generate_restaurant_name_and_items(cuisine):
-    # Chain 1: Restaurant Name
+    # Chain 1: to generate Restaurant Name
     prompt_template_name = PromptTemplate(
         input_variables=['cuisine'],
         template="I want to open a restaurant for {cuisine} food. Suggest a fancy name for this."
