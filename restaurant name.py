@@ -37,4 +37,4 @@ def generate_restaurant_name_and_items(cuisine):
     return response
 
 if __name__ == "__main__":
-    print(generate_restaurant_name_and_items("Italian"))
+    print(generate_restaurant_name_and_items("desired_place"))
